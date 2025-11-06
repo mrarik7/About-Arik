@@ -8,15 +8,16 @@ def go_to(page):
 if st.session_state.page == "quiz":
     a = 'zoro'
     st.header("welcome to 'ABOUT ARIK'")
-    st.text('if you want to know about my details.you have to answer a simple question:)')
-    b = st.text_input('what is my favourite anime charecter ?')
+    st.text('🔑if you want to know about my details,you have to apply password:)🔑')
+    b = st.text_input('💡hint: what is my favourite anime charecter ?')
     b = b.lower()
     if b:
         if b == a:
             st.success('you are right buddy:')
             if st.button('click me for more details:)'):
                 go_to('page2')
-
+        if b != a:
+            st.error('you are wrong .you cannot enter..')
 elif st.session_state.page == "page2":
     st.title("🎉here you can find all about me:)")
     st.text('Heyooo 👋😄\nI’m Arik 🌙✨ (aka nothing… cuz I’m mysterious like that 👀)\nI made this lil web app so you can know me a tiny bit 💗\nFor now, my socials are here 📱💬\nMore cool stuff coming soon… maybe 😌💫')
@@ -36,5 +37,4 @@ elif st.session_state.page == "page2":
             st.markdown('[📞whatsapp:01327329596(arik)](https://wa.me/01327329596)')
     if s4:
         if x == s4:
-
             st.markdown('[✈️telegram:tarek amin arik](http://t.me/mr_arik7)')
