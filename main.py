@@ -6,7 +6,7 @@ def go_to(page):
     st.session_state.page = page
 
 if st.session_state.page == "quiz":
-    a = 'roronoa zoro'
+    a = 'zoro'
     st.header("welcome to 'ABOUT ARIK'")
     st.text('if you want to know about my details.you have to answer a simple question:)')
     b = st.text_input('what is my favourite anime charecter ?')
@@ -36,4 +36,5 @@ elif st.session_state.page == "page2":
             st.markdown('[📞whatsapp:01327329596(arik)](https://wa.me/01327329596)')
     if s4:
         if x == s4:
+
             st.markdown('[✈️telegram:tarek amin arik](http://t.me/mr_arik7)')
