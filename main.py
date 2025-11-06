@@ -38,3 +38,5 @@ elif st.session_state.page == "page2":
     if s4:
         if x == s4:
             st.markdown('[✈️telegram:tarek amin arik](http://t.me/mr_arik7)')
+st.text('-ARIK')
+
